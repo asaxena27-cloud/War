@@ -35,7 +35,6 @@ public class QueueArray<Item> implements Iterable<Item>, Queue<Item> {
     }
 
     public void enqueue(Item item) {
-        // Double array capacity if full
         if (size == items.length) {
             resize(items.length * 2);
         }
